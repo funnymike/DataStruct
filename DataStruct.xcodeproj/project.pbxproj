@@ -13,6 +13,11 @@
 		E9ECC5D221537CBB0079576C /* LinkListProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ECC5D121537CBB0079576C /* LinkListProtocal.swift */; };
 		E9ECC5D421537FBE0079576C /* OneDirectionLinkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ECC5D321537FBE0079576C /* OneDirectionLinkList.swift */; };
 		E9ECC5D82153892D0079576C /* DoublyLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ECC5D72153892D0079576C /* DoublyLinkedList.swift */; };
+		E9ECC5E021539CDA0079576C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ECC5DF21539CDA0079576C /* main.swift */; };
+		E9ECC5E821539DCD0079576C /* StackProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ECC5E721539DCD0079576C /* StackProtocol.swift */; };
+		E9ECC5EA21539EE60079576C /* QueueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ECC5E921539EE60079576C /* QueueProtocol.swift */; };
+		E9ECC5EC2153A0BF0079576C /* SequenceStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ECC5EB2153A0BF0079576C /* SequenceStack.swift */; };
+		E9ECC5EE2153A0D40079576C /* SequenceQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ECC5ED2153A0D40079576C /* SequenceQueue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +39,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		E9ECC5DB21539CDA0079576C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +59,12 @@
 		E9ECC5D121537CBB0079576C /* LinkListProtocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkListProtocal.swift; sourceTree = "<group>"; };
 		E9ECC5D321537FBE0079576C /* OneDirectionLinkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneDirectionLinkList.swift; sourceTree = "<group>"; };
 		E9ECC5D72153892D0079576C /* DoublyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublyLinkedList.swift; sourceTree = "<group>"; };
+		E9ECC5DD21539CDA0079576C /* StackAndQueue */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StackAndQueue; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9ECC5DF21539CDA0079576C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E9ECC5E721539DCD0079576C /* StackProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackProtocol.swift; sourceTree = "<group>"; };
+		E9ECC5E921539EE60079576C /* QueueProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueProtocol.swift; sourceTree = "<group>"; };
+		E9ECC5EB2153A0BF0079576C /* SequenceStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceStack.swift; sourceTree = "<group>"; };
+		E9ECC5ED2153A0D40079576C /* SequenceQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceQueue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +82,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E9ECC5DA21539CDA0079576C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -70,6 +97,7 @@
 			children = (
 				E9ECC5BC215373940079576C /* DataStruct */,
 				E9ECC5C9215374A40079576C /* ListDataStruct */,
+				E9ECC5DE21539CDA0079576C /* StackAndQueue */,
 				E9ECC5BB215373940079576C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,6 +107,7 @@
 			children = (
 				E9ECC5BA215373940079576C /* DataStruct */,
 				E9ECC5C8215374A40079576C /* ListDataStruct */,
+				E9ECC5DD21539CDA0079576C /* StackAndQueue */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +130,42 @@
 				E9ECC5D72153892D0079576C /* DoublyLinkedList.swift */,
 			);
 			path = ListDataStruct;
+			sourceTree = "<group>";
+		};
+		E9ECC5DE21539CDA0079576C /* StackAndQueue */ = {
+			isa = PBXGroup;
+			children = (
+				E9ECC5E621539D990079576C /* Sequence */,
+				E9ECC5E521539D8E0079576C /* Link */,
+				E9ECC5E421539D370079576C /* Protocol */,
+				E9ECC5DF21539CDA0079576C /* main.swift */,
+			);
+			path = StackAndQueue;
+			sourceTree = "<group>";
+		};
+		E9ECC5E421539D370079576C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				E9ECC5E721539DCD0079576C /* StackProtocol.swift */,
+				E9ECC5E921539EE60079576C /* QueueProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		E9ECC5E521539D8E0079576C /* Link */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Link;
+			sourceTree = "<group>";
+		};
+		E9ECC5E621539D990079576C /* Sequence */ = {
+			isa = PBXGroup;
+			children = (
+				E9ECC5EB2153A0BF0079576C /* SequenceStack.swift */,
+				E9ECC5ED2153A0D40079576C /* SequenceQueue.swift */,
+			);
+			path = Sequence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +205,23 @@
 			productReference = E9ECC5C8215374A40079576C /* ListDataStruct */;
 			productType = "com.apple.product-type.tool";
 		};
+		E9ECC5DC21539CDA0079576C /* StackAndQueue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9ECC5E121539CDA0079576C /* Build configuration list for PBXNativeTarget "StackAndQueue" */;
+			buildPhases = (
+				E9ECC5D921539CDA0079576C /* Sources */,
+				E9ECC5DA21539CDA0079576C /* Frameworks */,
+				E9ECC5DB21539CDA0079576C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StackAndQueue;
+			productName = StackAndQueue;
+			productReference = E9ECC5DD21539CDA0079576C /* StackAndQueue */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -154,6 +236,9 @@
 						CreatedOnToolsVersion = 10.0;
 					};
 					E9ECC5C7215374A40079576C = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					E9ECC5DC21539CDA0079576C = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
@@ -172,6 +257,7 @@
 			targets = (
 				E9ECC5B9215373940079576C /* DataStruct */,
 				E9ECC5C7215374A40079576C /* ListDataStruct */,
+				E9ECC5DC21539CDA0079576C /* StackAndQueue */,
 			);
 		};
 /* End PBXProject section */
@@ -194,6 +280,18 @@
 				E9ECC5CB215374A40079576C /* main.swift in Sources */,
 				E9ECC5D421537FBE0079576C /* OneDirectionLinkList.swift in Sources */,
 				E9ECC5D221537CBB0079576C /* LinkListProtocal.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9ECC5D921539CDA0079576C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9ECC5EE2153A0D40079576C /* SequenceQueue.swift in Sources */,
+				E9ECC5E821539DCD0079576C /* StackProtocol.swift in Sources */,
+				E9ECC5EC2153A0BF0079576C /* SequenceStack.swift in Sources */,
+				E9ECC5EA21539EE60079576C /* QueueProtocol.swift in Sources */,
+				E9ECC5E021539CDA0079576C /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +453,26 @@
 			};
 			name = Release;
 		};
+		E9ECC5E221539CDA0079576C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9UV9ED579;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		E9ECC5E321539CDA0079576C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9UV9ED579;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -381,6 +499,15 @@
 			buildConfigurations = (
 				E9ECC5CD215374A40079576C /* Debug */,
 				E9ECC5CE215374A40079576C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9ECC5E121539CDA0079576C /* Build configuration list for PBXNativeTarget "StackAndQueue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9ECC5E221539CDA0079576C /* Debug */,
+				E9ECC5E321539CDA0079576C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
