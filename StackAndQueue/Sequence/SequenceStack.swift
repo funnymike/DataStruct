@@ -16,8 +16,8 @@ class SequenceStack: StackType {
         self.items.append(item)
     }
     
-    func pop(_ item: AnyObject) {
-        items.removeLast()
+    func pop() -> AnyObject? {
+        return items.removeLast()
     }
     
     func getTop() -> AnyObject? {

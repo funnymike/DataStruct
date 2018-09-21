@@ -14,7 +14,7 @@ protocol StackType {
     func push(_ item: AnyObject)
     
     /// 出栈
-    func pop(_ item: AnyObject)
+    func pop() -> AnyObject?
     
     /// 获取栈顶元素
     func getTop() -> AnyObject?
